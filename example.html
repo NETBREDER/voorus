@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive SxS Content Boxes</title>
+<style>
+#boxes,#boxes ul,#boxes ul li {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+#boxPlans:after {
+ content: '';
+ display: table;
+ clear: both;
+}
+
+#boxPlans {
+ zoom: 1;
+}
+
+#boxPlans {
+ max-width: 100rem;
+ margin: 0 auto;
+}
+
+#boxPlans #boxes .box {
+ background: transparent;
+ float: left;
+ width: 100%;
+ text-align: center;
+ margin: 0;
+}
+
+.blue {
+ background: #3779af !important;
+}
+
+.green {
+ background: #2EAE95 !important;
+}
+
+.pink {
+ background: #ED284F !important;
+}
+
+.box-one, 
+.box-two, 
+.box-three {
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 75px;
+ height: 13rem;
+}
+
+.box-one {
+ background-image: url("/wordpress/images/mechanic-tools.svg");
+}
+
+.box-two {
+ background-image: url("/wordpress/images/play-rounded-button.svg");
+}
+
+.box-three {
+ background-image: url("/wordpress/images/sedan-car-front.svg");
+}
+
+.boxContainer .title h2 {
+ font-size: 2.025em;
+ font-weight: 700;
+ color: #fff;
+ margin: -.8em 0 1em;
+ padding: 0 1em;
+}
+
+.boxContainer .description {
+ margin: 0 1em !important;
+}
+
+.boxContainer .button a {
+ background: linear-gradient(to bottom,#f9f9f9 5%, #e9e9e9 100%);
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #005ea5;
+ font-weight: 500;
+ letter-spacing: 3px;
+ line-height: 2.9em;
+ display: inline-block;
+ width: 50%;
+ height: 2.8em;
+ margin: 1.5em 0 3.8em;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+ 
+ #boxPlans #boxes .box {
+ width: 50%;
+ margin: 0 auto;
+ }
+ 
+ #boxPlans #boxes > li:nth-child(2n) {
+ margin-right: 0;
+ }
+
+ #boxPlans #boxes > li:last-child {
+ margin-left: 25%;
+}
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+ #boxPlans #boxes .box {
+ width: 50%;
+ margin: 0 auto;
+ }
+ 
+ #boxPlans #boxes > li:nth-child(2n) {
+ margin-right: 0;
+ }
+
+ #boxPlans #boxes > li:last-child {
+ margin-left: 25%;
+}
+ 
+}
+
+@media screen and (min-width: 1025px) {
+ 
+ #boxPlans {
+ margin: 0 auto;
+ }
+ 
+ #boxPlans #boxes .box {
+ width: 33.33%;
+ margin: 0;
+ 
+ -webkit-transition: all .25s;
+ -moz-transition: all .25s;
+ -ms-transition: all .25s;
+ -o-transition: all .25s;
+ transition: all .25s;
+ }
+ 
+ #boxPlans #boxes > li:last-child {
+ margin-right: 0;
+ }
+ 
+ .boxContainer .button a {
+ -webkit-transition: all .25s;
+ -moz-transition: all .25s;
+ -ms-transition: all .25s;
+ -o-transition: all .25s;
+ transition: all .25s;
+ }
+ 
+ .boxContainer .button a:hover {
+ background: linear-gradient(to bottom,#e9e9e9 5%, #f9f9f9 100%);
+ }
+ 
+}
+</style>
+</head>
+
+<body>
+<div id="boxPlans">
+ <ul id="boxes">
+  <li class="box blue ">
+   <ul class="boxContainer">
+    <li class="box-one"></li>
+    <li class="title">
+     <h2>Lorem ipsum dolor</h2>
+    </li>
+    <li class="description">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt lectus vel arcu viverra finibus.</p>
+    </li>
+    <li class="button"><a href="">Lorem ipsum</a></li>
+   </ul>
+  </li>
+  <li class="box green">
+   <ul class="boxContainer">
+    <li class="box-two"></li>
+    <li class="title">
+     <h2>Lorem ipsum dolor</h2>
+    </li>
+    <li class="description">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt lectus vel arcu viverra finibus.</p>
+    </li>
+    <li class="button"><a href="">Lorem ipsum</a></li>
+   </ul>
+  </li>
+  <li class="box pink">
+   <ul class="boxContainer">
+    <li class="box-three"></li>
+    <li class="title">
+     <h2>Lorem ipsum dolor</h2>
+    </li>
+    <li class="description">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt lectus vel arcu viverra finibus.</p>
+    </li>
+    <li class="button"><a href="">Lorem ipsum</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+</body>
+
+</html>
